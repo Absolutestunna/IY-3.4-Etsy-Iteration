@@ -31,9 +31,29 @@ function currencyCode(){
   items.forEach(function(num) {
     if (num.currency_code === "GBP"){
       final = num.title + " costs " + num.price + "";
-      }
+        }
     });
-    console.log(final)
+    // console.log(final)
     return final;
 }
 currencyCode();
+
+////////////////////////////////////////
+//Wood
+////////////////////////////////////////
+function wood(){
+var woodObjects = "";
+// var woodObjArr = [];
+  items.forEach(function(num){
+    num.materials.map(function(value){
+      if (value == "wood"){
+        woodObjects = num.title;
+        // woodObjArr.push(woodObjects)
+        console.log(woodObjects);
+      }
+    })
+  });
+
+  return woodObjects;
+}
+wood();
