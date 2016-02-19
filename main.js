@@ -64,13 +64,31 @@ wood();
 function eightOrMore(){
     function matFilt(value){
       if (value.materials.length > 8){
-        console.log(value.title);
+        // console.log(value.title);
         value.materials.forEach(function(i){
-          console.log(i);
+          // console.log(i);
         });
       }
     }
-    
+
       items.filter(matFilt);
 }
 eightOrMore();
+
+
+////////////////////////////////////////
+//Who made this?
+////////////////////////////////////////
+
+function handMadeItems(){
+  var final = 0;
+
+  items.forEach(function(num) {
+    if (num.who_made === "i_did"){
+      final++;
+        }
+    });
+    console.log(final + " were made by their sellers")
+    return final;
+}
+handMadeItems();
