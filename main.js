@@ -49,7 +49,7 @@ var woodObjects = "";
       if (value == "wood"){
         woodObjects = num.title;
         // woodObjArr.push(woodObjects)
-        console.log(woodObjects);
+        // console.log(woodObjects);
       }
     })
   });
@@ -57,3 +57,20 @@ var woodObjects = "";
   return woodObjects;
 }
 wood();
+
+////////////////////////////////////////
+//Eight items or more
+////////////////////////////////////////
+function eightOrMore(){
+    function matFilt(value){
+      if (value.materials.length > 8){
+        console.log(value.title);
+        value.materials.forEach(function(i){
+          console.log(i);
+        });
+      }
+    }
+    
+      items.filter(matFilt);
+}
+eightOrMore();
