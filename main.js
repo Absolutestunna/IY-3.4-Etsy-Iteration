@@ -7,7 +7,7 @@ var sel_prices = 0;
   items.forEach(function(num) {
     sel_prices += num.price;
     });
-    // console.log("The average is: " + (sel_prices/(items.length)));
+    console.log("The average is: " + (sel_prices/(items.length)));
 }
 itemPriceAvg();
 
@@ -19,7 +19,7 @@ function itemsBetween(value){
   return (value.price > 14 && value.price < 18);
 }
 
-// console.log ("Items that cost between $14.00 USD and $18.00 USD:" + (items.filter(itemsBetween)));
+console.log ("Items that cost between $14.00 USD and $18.00 USD:" + (items.filter(itemsBetween)));
 
 ////////////////////////////////////////
 //Currency
@@ -33,7 +33,7 @@ function currencyCode(){
       final = num.title + " costs " + num.price + "";
         }
     });
-    // console.log(final)
+    console.log(final)
     return final;
 }
 currencyCode();
@@ -49,7 +49,7 @@ var woodObjects = "";
       if (value == "wood"){
         woodObjects = num.title;
         // woodObjArr.push(woodObjects)
-        // console.log(woodObjects);
+        console.log(woodObjects);
       }
     })
   });
@@ -66,7 +66,7 @@ function eightOrMore(){
       if (value.materials.length > 8){
         // console.log(value.title);
         value.materials.forEach(function(i){
-          // console.log(i);
+          console.log(i);
         });
       }
     }
