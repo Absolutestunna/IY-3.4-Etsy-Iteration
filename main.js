@@ -33,7 +33,7 @@ function currencyCode(){
       final = num.title + " costs " + num.price + "";
         }
     });
-    console.log(final)
+    console.log(final);
     return final;
 }
 currencyCode();
@@ -49,9 +49,9 @@ var woodObjects = "";
       if (value == "wood"){
         woodObjects = num.title;
         // woodObjArr.push(woodObjects)
-        console.log(woodObjects);
+        console.log("woodobjects are: ", woodObjects);
       }
-    })
+    });
   });
 
   return woodObjects;
@@ -88,7 +88,7 @@ function handMadeItems(){
       final++;
         }
     });
-    console.log(final + " were made by their sellers")
+    console.log(final + " were made by their sellers");
     return final;
 }
 handMadeItems();
